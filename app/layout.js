@@ -1,15 +1,15 @@
-import localFont from "next/font/local";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+import { Roboto } from "next/font/google";
+import Footer from "../components/footer/Footer";
+import NavBar from "@/components/header/NavBar";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700", "900"],
+  variable: "--font-roboto",
 });
 
 export const metadata = {
@@ -19,11 +19,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${roboto.variable} scroll-smooth	`}>
+      <body className="font-roboto antialiased bg-slate-950">
+        <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

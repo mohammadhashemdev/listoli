@@ -1,101 +1,142 @@
-import Image from "next/image";
-
+/* eslint-disable @next/next/no-img-element */
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLightbulb, faPeopleArrows } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+    <main>
+      <section className="w-full flex flex-col justify-center items-center px-10 md:px-4">
+        <div className="flex flex-col items-center gap-4 md:gap-6 text-center my-24 md:my-36">
+          <h1 className="text-4xl md:text-7xl font-black text-white">
+            Buying || Building?
+          </h1>
+          <h3 className="text-2xl md:text-5xl font-medium text-slate-300">
+            Why Choose, When You Can Do Both?
+          </h3>
+          <p className="text-sm md:text-xl text-slate-400 md:w-3/6 my-6 md:my-12">
+            You don’t have to choose between buying or building. With our
+            innovative platform, you can easily combine the best of both worlds
+            in just Three Simple Steps. Whether you&apos;re looking to purchase
+            ready-made products or customize something entirely your own,
+            we&apos;ve got you covered.
+          </p>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://listoli.gitbook.io/content-service-api"
             target="_blank"
-            rel="noopener noreferrer"
+            className="px-8 md:px-12 py-3 md:py-4 text-sm md:text-xl bg-orange-600 rounded-xl text-white font-bold hover:bg-orange-800 transition-all cursor-pointer"
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            Read Docs
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="flex flex-col md:gap-56 gap-4 w-full container my-4 md:my-16">
+          <div className="w-full md:px-24 flex justify-center items-center">
+            <div className="relative w-full flex justify-start items-start">
+              <img
+                src="/actualcode.png"
+                alt="code-illustration"
+                className="hidden md:block md:w-4/5 img"
+              />
+              <div className="md:absolute right-0 bottom-0 w-full md:w-96 min-h-80 bg-slate-950 rounded-xl border border-slate-800 px-6 py-10 flex flex-col justify-center items-center gap-4">
+                <div className="flex justify-center items-center w-14 h-14 p-3 rounded-full bg-orange-600/15">
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    size="2x"
+                    className="text-orange-600"
+                  />
+                </div>
+                <h3 className="text-white text-center font-bold text-2xl">
+                  Access the codebase
+                </h3>
+                <div className="w-14 rounded-full bg-indigo-700 py-1"></div>
+                <p className="text-xs md:text-sm text-slate-200 text-center px-9 mt-5">
+                  Yes, the actual code. Not just an API of a black box, but a
+                  straightforward git clone. From source code to test
+                  repositories—our code is yours now.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:px-24 flex justify-center items-center">
+            <div className="relative w-full flex justify-end items-start">
+              <img
+                src="/features.png"
+                alt="features-illustration"
+                className="hidden md:block md:w-4/5 img"
+              />
+              <div className="md:absolute left-0 bottom-0 w-full md:w-96 min-h-80 bg-slate-950 rounded-xl border border-slate-800 px-6 py-10 flex flex-col justify-center items-center gap-4">
+                <div className="flex justify-center items-center w-14 h-14 p-3 rounded-full bg-orange-600/15">
+                  <FontAwesomeIcon
+                    icon={faLightbulb}
+                    size="2x"
+                    className="text-orange-600"
+                  />
+                </div>
+                <h3 className="text-white text-center font-bold text-2xl">
+                  Delivering new features
+                </h3>
+                <div className="w-14 rounded-full bg-indigo-700 py-1"></div>
+                <p className="text-xs md:text-sm text-slate-200 text-center px-8 mt-5">
+                  You continuously deploy. Our latest features are yours to
+                  adopt. You watch them evolve and learn as we grow. Regular
+                  workshops, training, and on-demand support make us an
+                  extension of your team, at a fraction of the cost.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:px-24 flex justify-center items-center">
+            <div className="relative w-full flex justify-start items-start">
+              <img
+                src="/fallApart.png"
+                alt="code-illustration"
+                className="hidden md:block md:w-4/5 img"
+              />
+              <div className="md:absolute right-0 bottom-0 w-full md:w-96 min-h-80 bg-slate-950 rounded-xl border border-slate-800 px-6 py-10 flex flex-col justify-center items-center gap-4">
+                <div className="flex justify-center items-center w-14 h-14 p-3 rounded-full bg-orange-600/15">
+                  <FontAwesomeIcon
+                    icon={faPeopleArrows}
+                    size="lg"
+                    className="text-orange-600"
+                  />
+                </div>
+                <h3 className="text-white text-center font-bold text-2xl">
+                  If getting apart
+                </h3>
+                <div className="w-14 rounded-full bg-indigo-700 py-1"></div>
+                <p className="text-xs md:text-sm text-slate-200 text-center px-8 mt-5">
+                  You&apos;re no longer just the buyer; you&apos;re the maker
+                  now.Whether you&apos;ve outgrown our pace or your needs have
+                  changed, you can choose to break off at a specific version and
+                  continue on your own. By then, you&apos;ll be as familiar with
+                  the code as we are. Our support team will be available to help
+                  with the transition—if you still need them.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full md:w-3/6 mx-auto flex flex-col justify-center items-center gap-6 my-24">
+          <h3 className="text-center text-2xl md:text-3xl text-white font-bold">
+            Stay in the loop
+          </h3>
+          <p className="md:w-3/6 text-xs md:text-sm text-slate-200 text-center">
+            Never miss out on important news, updates, and special offers! Sign
+            up with your email to stay informed about our latest products,
+            features, and exclusive promotions.
+          </p>
+          <div className="flex flex-row items-center justify-between w-96 gap-1 p-2 bg-slate-800 rounded-md">
+            <input
+              className="px-3 py-2 grow rounded-md text-xs md:text-sm"
+              type="text"
+              name="email"
+              placeholder="Email Address"
+            />
+            <button className="px-4 md:px-6 py-2 text-xs md:text-sm bg-orange-600 rounded-md text-white font-bold hover:bg-orange-800 transition-all">
+              Sign up
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
