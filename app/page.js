@@ -28,7 +28,7 @@ export default function Home() {
             Read Docs
           </a>
         </div>
-        <div className="flex flex-col md:gap-56 gap-4 w-full container my-4 md:my-16">
+        <div className="flex flex-col md:gap-56 gap-12 w-full container my-4 md:my-16">
           <div className="w-full md:px-24 flex justify-center items-center">
             <div className="relative w-full flex justify-start items-start">
               <img
@@ -44,6 +44,9 @@ export default function Home() {
                     className="text-orange-600"
                   />
                 </div>
+                <p className="h-12 w-12 bg-orange-600 text-white rounded-full flex justify-center items-center absolute -right-5 -top-5 font-bold text-2xl">
+                  1
+                </p>
                 <h3 className="text-white text-center font-bold text-2xl">
                   Access the codebase
                 </h3>
@@ -71,6 +74,9 @@ export default function Home() {
                     className="text-orange-600"
                   />
                 </div>
+                <p className="h-12 w-12 bg-orange-600 text-white rounded-full flex justify-center items-center absolute md:-left-5 -right-5 -top-5 font-bold text-2xl">
+                  2
+                </p>
                 <h3 className="text-white text-center font-bold text-2xl">
                   Delivering new features
                 </h3>
@@ -99,6 +105,9 @@ export default function Home() {
                     className="text-orange-600"
                   />
                 </div>
+                <p className="h-12 w-12 bg-orange-600 text-white rounded-full flex justify-center items-center absolute -right-5 -top-5 font-bold text-2xl">
+                  3
+                </p>
                 <h3 className="text-white text-center font-bold text-2xl">
                   If getting apart
                 </h3>

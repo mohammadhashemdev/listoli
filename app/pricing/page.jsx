@@ -1,5 +1,5 @@
 function page() {
-  return <div>this is the pricing page</div>;
+  return <main>this is the pricing</main>;
 }
 
 export default page;
