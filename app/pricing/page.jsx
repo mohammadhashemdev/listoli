@@ -36,32 +36,32 @@ function page() {
           </div>
         </div>
         <div className="flex flex-row w-full gap-6 ">
-          <div className="flex flex-col w-1/4 rounded-xl border border-slate-700 px-6 py-4">
-            <h5 className="font-bold text-lg text-white border-b border-slate-700 pb-2">
+          <div className="flex flex-col w-1/4 rounded-xl border border-slate-800 px-6 py-4">
+            <h5 className="font-bold text-lg text-white border-b border-slate-800 pb-2">
               Content Management
             </h5>
             <p className="text-white pt-4">
               Manage and publish private and public posts.
             </p>
           </div>
-          <div className="flex flex-col w-1/4 rounded-xl border border-slate-700 px-6 py-4">
-            <h5 className="font-bold text-lg text-white border-b border-slate-700 pb-2">
+          <div className="flex flex-col w-1/4 rounded-xl border border-slate-800 px-6 py-4">
+            <h5 className="font-bold text-lg text-white border-b border-slate-800 pb-2">
               User Engagement
             </h5>
             <p className="text-white pt-4">
               Enable likes, comments, and reactions for interactive content.
             </p>
           </div>
-          <div className="flex flex-col w-1/4 rounded-xl border border-slate-700 px-6 py-4">
-            <h5 className="font-bold text-lg text-white border-b border-slate-700 pb-2">
+          <div className="flex flex-col w-1/4 rounded-xl border border-slate-800 px-6 py-4">
+            <h5 className="font-bold text-lg text-white border-b border-slate-800 pb-2">
               Notifications System
             </h5>
             <p className="text-white pt-4">
               Real-time alerts for user interactions.
             </p>
           </div>
-          <div className="flex flex-col w-1/4 rounded-xl border border-slate-700 px-6 py-4">
-            <h5 className="font-bold text-lg text-white border-b border-slate-700 pb-2">
+          <div className="flex flex-col w-1/4 rounded-xl border border-slate-800 px-6 py-4">
+            <h5 className="font-bold text-lg text-white border-b border-slate-800 pb-2">
               Content Moderation
             </h5>
             <p className="text-white pt-4">
@@ -119,8 +119,8 @@ function page() {
           </div>
         </div>
         <div className="flex flex-row w-full gap-6 ">
-          <div className="flex flex-col w-1/3 rounded-xl border border-slate-700 px-6 py-4">
-            <h5 className="font-bold text-lg text-white border-b border-slate-700 pb-2">
+          <div className="flex flex-col w-1/3 rounded-xl border border-slate-800 px-6 py-4">
+            <h5 className="font-bold text-lg text-white border-b border-slate-800 pb-2">
               Cut-Off License
             </h5>
             <p className="text-white pt-4">
@@ -128,16 +128,16 @@ function page() {
               independently.
             </p>
           </div>
-          <div className="flex flex-col w-1/3 rounded-xl border border-slate-700 px-6 py-4">
-            <h5 className="font-bold text-lg text-white border-b border-slate-700 pb-2">
+          <div className="flex flex-col w-1/3 rounded-xl border border-slate-800 px-6 py-4">
+            <h5 className="font-bold text-lg text-white border-b border-slate-800 pb-2">
               Off-Boarding Support
             </h5>
             <p className="text-white pt-4">
               Receive 2 hours of free support during the transition.
             </p>
           </div>
-          <div className="flex flex-col w-1/3 rounded-xl border border-slate-700 px-6 py-4">
-            <h5 className="font-bold text-lg text-white border-b border-slate-700 pb-2">
+          <div className="flex flex-col w-1/3 rounded-xl border border-slate-800 px-6 py-4">
+            <h5 className="font-bold text-lg text-white border-b border-slate-800 pb-2">
               Single-Use License
             </h5>
             <p className="text-white pt-4">
