@@ -3,7 +3,7 @@ function page() {
     <main className="h-screen container mx-auto flex justify-center items-center">
       <form
         action="#"
-        className="w-4/5 md:w-3/5 lg:w-2/5 flex flex-col gap-4 px-5 py-7 border border-slate-800 rounded-xl"
+        className="w-4/5 md:w-3/5 lg:w-6/8 xl:w-2/5 flex flex-col gap-4 px-5 py-7 border border-slate-800 rounded-xl"
       >
         <div className="mb-8">
           <h3 className="font-bold text-white text-2xl md:text-4xl text-center mb-2">
