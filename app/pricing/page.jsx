@@ -1,4 +1,50 @@
-function page() {
+"use client";
+
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+
+function Page() {
+  const [selectedFeature, setSelectedFeature] = React.useState(null);
+
+  const ApiFeatures = [
+    {
+      id: 1,
+      name: "Content Management",
+      description: "Manage and publish private and public posts.",
+    },
+    {
+      id: 2,
+      name: "User Engagement",
+      description:
+        "Enable likes, comments, and reactions for interactive content.",
+    },
+    {
+      id: 3,
+      name: "Fully Searchable (Optional)",
+      description: "Use Algolia for advanced search with API integration",
+    },
+    {
+      id: 4,
+      name: "Notifications System",
+      description: "Real-time alerts for user interactions.",
+    },
+    {
+      id: 5,
+      name: "Media Management",
+      description: "Automated media optimization for various platforms.",
+    },
+    {
+      id: 6,
+      name: "Content Moderation",
+      description: "AI-driven moderation with manual review options.",
+    },
+  ];
+
+  const handleFeatureClick = (id) => {
+    setSelectedFeature(selectedFeature === id ? null : id);
+  };
+
   return (
     <main className="container mx-auto md:px-36 px-4 flex flex-col gap-6">
       <div className="hidden xl:block">
@@ -149,9 +195,75 @@ function page() {
           </div>
         </div>
       </div>
+
       {/* mobile version */}
+      <div className="block md:hidden">
+        <div className="flex flex-col gap-12 justify-center items-center text-white my-10">
+          <div className="w-full border border-slate-700 rounded-xl p-8 relative flex flex-col gap-4">
+            <div className="absolute -top-5 rounded-full border border-slate-700 text-center px-4 py-2 bg-slate-950 left-1/2 -translate-x-1/2">
+              <p className="text-white text-sm">Content Service V 1.0</p>
+            </div>
+
+            <h1 className="text-white text-center text-3xl font-bold py-2">
+              Java Spring Boot
+            </h1>
+
+            {/* features */}
+            <div className="flex flex-col justify-start items-start">
+              <p className="font-bold text-white pb-2 border-b border-slate-800 w-full">
+                Features
+              </p>
+
+              {ApiFeatures.map((item) => {
+                return (
+                  <div key={item.id} className=" mt-2 relative w-full">
+                    <div
+                      onClick={() => handleFeatureClick(item.id)}
+                      className="flex flex-row gap-2 items-center"
+                    >
+                      <span className="text-orange-600">
+                        <FontAwesomeIcon icon={faCircleCheck} />
+                      </span>
+                      <p className="text-white font-bold text-sm border-b border-dashed border-slate-500">
+                        {item.name}
+                      </p>
+                    </div>
+
+                    {selectedFeature === item.id && (
+                      <div
+                        onClick={() => setSelectedFeature(null)}
+                        className="absolute w-full top-0 text-xs z-50 mt-6 bg-gray-400 text-slate-700 font-bold rounded-lg p-3"
+                      >
+                        <p>{item.description}</p>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* pricing */}
+            <h1 className="font-bold text-5xl text-orange-600 text-center my-2">
+              $10<span className="text-base">/month</span>
+            </h1>
+
+            {/* button */}
+            <a
+              href="#"
+              target="_blank"
+              className="px-6 py-4 text-sm bg-orange-600 rounded-lg text-white font-bold hover:bg-orange-800 transition-all cursor-pointer"
+            >
+              Signup to get Notified for Initial Release
+            </a>
+
+            <p className="font-bold text-sm text-white underline text-center">
+              API Documentation
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
 
-export default page;
+export default Page;

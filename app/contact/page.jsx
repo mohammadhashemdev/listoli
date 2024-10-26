@@ -1,4 +1,4 @@
-function page() {
+function Page() {
   return (
     <main className="h-screen container mx-auto flex justify-center items-center">
       <form
@@ -53,4 +53,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
