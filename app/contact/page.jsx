@@ -1,3 +1,6 @@
+import InputField from "@/components/InputField";
+import TextAreaField from "@/components/TextAreaField";
+
 function Page() {
   return (
     <main className="h-screen container mx-auto flex justify-center items-center">
@@ -14,37 +17,12 @@ function Page() {
           </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-4">
-          <input
-            required
-            className="grow border text-sm md:text-base border-slate-800 rounded-md text-white focus:outline-none bg-slate-950 px-4 py-2"
-            type="text"
-            name="firstname"
-            placeholder="First Name"
-          />
-          <input
-            required
-            className="grow border text-sm md:text-base border-slate-800 rounded-md text-white focus:outline-none bg-slate-950 px-4 py-2"
-            type="text"
-            name="lastname"
-            placeholder="Last Name"
-          />
+          <InputField name="firstname" placeholder="First Name" value="" />
+          <InputField name="lastname" placeholder="Last Name" value="" />
         </div>
         <div className="flex flex-col gap-4">
-          <input
-            required
-            className="grow border text-sm md:text-base border-slate-800 rounded-md text-white focus:outline-none bg-slate-950 px-4 py-2"
-            type="email"
-            name="email"
-            placeholder="Email Address"
-          />
-          <textarea
-            required
-            placeholder="Message"
-            className="grow border text-sm md:text-base border-slate-800 rounded-md text-white focus:outline-none bg-slate-950 px-4 py-2"
-            name="message"
-            id="message"
-            rows={"5"}
-          ></textarea>
+          <InputField name="Email" placeholder="Email Address" value="" />
+          <TextAreaField name="message" value="" placeholder="Message" />
         </div>
         <button
           type="submit"

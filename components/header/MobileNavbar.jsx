@@ -22,6 +22,9 @@ function MobileNavbar({ open, setIsOpen }) {
             <ActiveLink href="/contact" onClick={() => setIsOpen(false)}>
               Contact
             </ActiveLink>
+            <ActiveLink href="https://listoli.gitbook.io/content-service-api">
+              Documentation
+            </ActiveLink>
           </div>
         </motion.div>
       )}
