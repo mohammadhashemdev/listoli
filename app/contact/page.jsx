@@ -15,12 +15,14 @@ function Page() {
         </div>
         <div className="flex flex-col lg:flex-row gap-4">
           <input
+            required
             className="grow border text-sm md:text-base border-slate-800 rounded-md text-white focus:outline-none bg-slate-950 px-4 py-2"
             type="text"
             name="firstname"
             placeholder="First Name"
           />
           <input
+            required
             className="grow border text-sm md:text-base border-slate-800 rounded-md text-white focus:outline-none bg-slate-950 px-4 py-2"
             type="text"
             name="lastname"
@@ -29,12 +31,14 @@ function Page() {
         </div>
         <div className="flex flex-col gap-4">
           <input
+            required
             className="grow border text-sm md:text-base border-slate-800 rounded-md text-white focus:outline-none bg-slate-950 px-4 py-2"
             type="email"
             name="email"
             placeholder="Email Address"
           />
           <textarea
+            required
             placeholder="Message"
             className="grow border text-sm md:text-base border-slate-800 rounded-md text-white focus:outline-none bg-slate-950 px-4 py-2"
             name="message"

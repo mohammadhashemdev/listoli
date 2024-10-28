@@ -13,7 +13,7 @@ export default function Home() {
           <h3 className="text-2xl md:text-5xl font-medium text-slate-300">
             Why Choose, When You Can Do Both?
           </h3>
-          <p className="text-sm md:text-xl text-slate-400 md:w-3/6 my-6 md:my-12">
+          <p className="text-sm md:text-xl text-slate-400 md:w-5/6 xl:w-6/12 my-6 md:my-12">
             You don’t have to choose between buying or building. With our
             innovative platform, you can easily combine the best of both worlds
             in just Three Simple Steps. Whether you&apos;re looking to purchase
@@ -21,15 +21,15 @@ export default function Home() {
             we&apos;ve got you covered.
           </p>
           <a
-            href="https://listoli.gitbook.io/content-service-api"
+            href="/pricing"
             target="_blank"
             className="px-8 md:px-12 py-3 md:py-4 text-sm md:text-xl bg-orange-600 rounded-xl text-white font-bold hover:bg-orange-800 transition-all cursor-pointer"
           >
-            Read Docs
+            Read More
           </a>
         </div>
         <div className="flex flex-col md:gap-56 gap-12 w-full container my-4 md:my-16">
-          <div className="w-full md:px-24 flex justify-center items-center">
+          <div className="animate w-full md:px-24 flex justify-center items-center">
             <div className="relative w-full flex justify-start items-start">
               <img
                 src="/actualcode.png"
@@ -59,7 +59,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full md:px-24 flex justify-center items-center">
+          <div className="animate w-full md:px-24 flex justify-center items-center">
             <div className="relative w-full flex justify-end items-start">
               <img
                 src="/features.png"
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full md:px-24 flex justify-center items-center">
+          <div className="animate w-full md:px-24 flex justify-center items-center">
             <div className="relative w-full flex justify-start items-start">
               <img
                 src="/fallApart.png"

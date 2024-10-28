@@ -3,11 +3,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-export default function AtiveLink({ href, children, onClick }) {
+export default function AtiveLink({ href, children, onClick, target = "" }) {
   const pathName = usePathname();
   const isActive = pathName === href;
   return (
     <Link
+      target={target}
       onClick={onClick}
       href={href}
       className={`${

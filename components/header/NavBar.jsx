@@ -27,6 +27,12 @@ export default function NavBar() {
           <ActiveLink href="/">Home</ActiveLink>
           <ActiveLink href="/pricing">Pricing</ActiveLink>
           <ActiveLink href="/contact">Contact</ActiveLink>
+          <ActiveLink
+            target="_blank"
+            href="https://listoli.gitbook.io/content-service-api"
+          >
+            Docs
+          </ActiveLink>
         </div>
         <div
           className="text-white md:hidden"
